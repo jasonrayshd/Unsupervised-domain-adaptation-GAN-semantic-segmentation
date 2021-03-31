@@ -1,0 +1,33 @@
+potsdam:
+    train:
+        image_path: "/home/admin/segmentation/task2/data/potsdam/train/cropped/images/train"
+        mask_path: "/home/admin/segmentation/task2/data/potsdam/train/cropped/masks/train"
+
+    val:
+        image_path: "/home/admin/segmentation/task2/data/potsdam/train/cropped/images/val"
+        mask_path: "/home/admin/segmentation/task2/data/potsdam/train/cropped/masks/val"
+
+    transformed:
+        image_path: ""
+        mask_path: ""
+vaihingen:
+    train:
+        image_path: "/home/admin/segmentation/task2/data/vaihingen/train/cropped/images/train"
+        mask_path: "/home/admin/segmentation/task2/data/vaihingen/train/cropped/masks/train"
+
+    val:
+        image_path: "/home/admin/segmentation/task2/data/vaihingen/train/cropped/images/val"
+        mask_path: "/home/admin/segmentation/task2/data/vaihingen/train/cropped/masks/val"
+
+optimizer: "Adam"            # available options: Adam, SGD, RMSprop
+loss_fn: "CrossEntropyLoss"  # available options: CrossEntropyLoss, BCELoss, MSELoss
+
+num_workers: 0
+epochs: 220
+learning_rate: 0.001
+batchsize: 64
+n_classes: 6
+weight_decay: 0.0003
+momentum: 0.9
+
+model_tag: "bisenetv2_task2"

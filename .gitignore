@@ -1,0 +1,9 @@
+# images
+*.png
+*.tif
+
+# log files
+*.log
+
+# model files
+*.pt

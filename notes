@@ -1,0 +1,7 @@
+0. begin
+
+1. no normalization in transform,  result: better than 2 
+
+2. no learning rate scheduler, result: better than 0
+
+3. no augmentation, result: 
